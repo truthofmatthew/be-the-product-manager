@@ -1,0 +1,14 @@
+/* Customizing the default theme */
+body {
+    background-color: #e61515;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  h1, h2, h3 {
+    color: red;
+  }
+  
+  section {
+    border: 20px solid #e74c3c;
+  }
+  
