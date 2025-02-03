@@ -1,6 +1,6 @@
 ---
 marp: true
-theme:  base
+theme: custom-theme
 paginate: true
 
 header: "Dialouge and The Power of Decision-Making"
@@ -9,40 +9,7 @@ author: "Matthew Truth"
 
 
 ---
-<style>
-@font-face {
-  font-family: 'BearSansUI';
-  src: url('./fonts/sansui-regular-webfont.woff2') format('woff2');
-  
-}
 
-@font-face {
-  font-family: 'SansUIHeadline';
-  src: url('./fonts/sansuiheadline-medium-webfont.woff2') format('woff2');
-  
-}
-
-@font-face {
-  font-family: 'SansUIBold';
-  src: url('./fonts/sansui-bold-webfont.woff2') format('woff2');
-
-}
-
-section {
-  font-family: 'BearSansUI', sans-serif;
-}
-
-h1  {
-  font-family: 'SansUIHeadline', sans-serif;
-}
-
-strong {
-  font-family: 'SansUIBold', sans-serif;
-  
-
-}
-
-</style>
 
  
 <style scoped>
@@ -53,16 +20,19 @@ strong {
     margin: 0; 
     
   }
-h2 {
+h3 {
     font-size: 36px; 
     text-align: center; 
     margin: 0; 
   }
-
+ b {
+  color:#DD4C4F;
+}
 </style>
 
-# Dialogue and The Power of Decision-Making
-## Perception **|** Dialogue **|** Execution
+# <span class="tag"> Dialogue</span> and The Power of Decision-Making
+
+### Perception <b> | </b> Dialogue <b> | </b>  Execution
 
 
 ---
@@ -70,67 +40,16 @@ h2 {
   .container {
   display: flex;
   justify-content: space-between;
-  height: 100vh; /* Make container full-height */
+  height: 100vh; 
 }
 
-.image-box {
-  position: relative;
-  width: 33.33%; /* Divide screen into 3 equal sections */
-  height: 70%; /* Full height */
-}
-
-.image-box img {
-  width: 90%;
-  height: 100%;
-  object-fit: cover; /* Make sure the image covers the full box */
-  border-radius: 8px; /* Optional: Rounded corners */
-}
-
-.image-box::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-   width: 90%;
-  height: 40%; /* Adjust this value to control the size of the gradient */
-  background: linear-gradient(to top, rgb(45, 63, 143), rgba(0, 0, 0, 0)); /* Black to transparent gradient */
-  border-radius: 8px; /* Rounded corners matching the image */
-}
-
-.image-box p {
-  position: absolute;
-  bottom: 30px; /* Position text at the bottom */
-  left: 45%; /* Center the text */
-  transform: translateX(-50%); /* Center the text */
-  color: white;
-   
-  
-}
-
-.book-name {
-  color: white;
-  font-size: 18px;
-  font-style: bold;
-  font-weight: 900;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 0px; 
-}
-
-.auth-name {
-  color: white;
-  font-size: 24px;
-  font-style: bold;
-  text-align: center;
-  margin-bottom: 40px; 
-}
 header, footer {
     display: none;
   }
 
 </style>
 
-# Thought Leaders Who Inspired This
+# Thought Leaders Who Inspired Me
 
 <div class="container">
   <div class="image-box">
@@ -172,31 +91,15 @@ header, footer {
 # Excessive Thinking
 
 ## Interpretation vs. Reality
-### What We Think vs. What Is Real
-#### Opinion vs. Fact
-
 
 
 ---
 
-<style scoped>
-   
-  th, td {
-    border: 12px solid #ddd;
-    border-width: 1px;
-    text-align: left;
-    padding-right: 60px;
-    
-  }
-  th {
-   
-    background-color: #f4f4f4;
-  }
-</style>
+
 
 ![bg right:30% fit](./imgs/apple.webp)
 
-| **What is**                  | **What we think**                       |
+| What is - Fact                 | What we think   - Opinion                    |
 |------------------------------|-----------------------------------------|
 | Red.                         | Perfect for a healthy snack.           |
 | There.                        | Reminds me of my childhood.            |
@@ -234,7 +137,7 @@ Our perceptions often differ from reality, causing fragmented thinking and incom
 
 </hr>
 
-| **Perception**                             | **Reality**                                      |
+| Perception                             | Reality                                      |
 |--------------------------------------------|--------------------------------------------------|
 | Sales drop due to new feature release.    | Competitor launched a marketing campaign.        |
 
@@ -247,12 +150,12 @@ Dialogue is when people share ideas and listen without defending their own views
 </hr>
 
 
-| **Term**       | **Definition**                                          |
+| Term       | Definition                                          |
 |----------------|---------------------------------------------------------|
-| **Dialogue**   | A cooperative exchange aimed at mutual understanding.   |
-| **Debate**     | A competitive argument where each side defends its point of view. |
-| **Negotiation**| A discussion to reach a mutually beneficial agreement.  |
-| **Conversation**| Informal exchange of ideas or information between people. |
+|Dialogue   | A cooperative exchange aimed at mutual understanding.   |
+| Debate     | A competitive argument where each side defends its point of view. |
+| Negotiation| A discussion to reach a mutually beneficial agreement.  |
+| Conversation| Informal exchange of ideas or information between people. |
 
 
 
@@ -275,41 +178,29 @@ Dialogue is when people share ideas and listen without defending their own views
 ---
 
 
-<style scoped>
- table {
-    width: 100%;
-    table-layout: fixed;
-  }
-  td, th {
-    padding-right: 40px;
-    text-align: left;
-  }
- 
-</style>
-
 # Decision-Making Framework
 
-| **Decision Type**  | **Accountability**   | **Purpose**      | **Decision Maker**    |
+| Decision Type  | Accountability   | Purpose      | Decision Maker    |
 |--------------------|----------------------|------------------|-----------------------|
-| **No Decision**    | Inform 🗣️           | Share info 📢     | No decision yet       |
-| **Your Decision**  | Delegate 👥          | Guide 🧭          | The other person      |
-| **My Decision**    | Consult 💬           | Listen & Ask 👂   | You                   |
-| **Our Decision**   | Consensus 🤝         | Facilitate Dialogue 💬 | Both (Consensus)      |
-| **Each Decision**  | Align 🔍             | Collaborate 🗨️   | Both, separately      |
+| No Decision    | Inform 🗣️           | Share info 📢     | No decision yet       |
+| Your Decision  | Delegate 👥          | Guide 🧭          | The other person      |
+| My Decision    | Consult 💬           | Listen & Ask 👂   | You                   |
+| Our Decision   | Consensus 🤝         | Facilitate Dialogue 💬 | Both (Consensus)      |
+| Each Decision  | Align 🔍             | Collaborate 🗨️   | Both, separately      |
 
 
 
 
 ---
 
-# 🗣️ "No Decision" (Inform)  
+# 🗣️ No Decision - Inform  
 ✅ **Sharing info, no decision yet.**  
 💡 Example: *"I found cool weekend spots."*  
 💡 Product Example: *"We’re exploring AI-generated playlists."*
 
 ---
 
-# 👥 "Your Decision" (Delegate)  
+# 👥 Your Decision - Delegate  
 ✅ **You trust the other person to decide.**  
 💡 Example: *"You choose the destination!"*  
 💡 Product Example: *"Delegate analysis of AI-generated playlists to the data science team."*
@@ -317,7 +208,7 @@ Dialogue is when people share ideas and listen without defending their own views
 
 ---
 
-# 💬 "My Decision" (Consult)  
+# 💬 My Decision - Consult  
 ✅ **You ask for input, but you decide.**  
 💡 Example: *"What do you think of the beach? I'll decide."*  
 💡 Product Example: *"Consult the legal team on user data, then make the decision."*
@@ -325,7 +216,11 @@ Dialogue is when people share ideas and listen without defending their own views
 
 ---
 
-# 🤝 "Our Decision" (Consensus)  
+
+# 🤝 Our Decision - Consensus  
+
+
+
 ✅ **You both decide together.**  
 💡 Example: *"Let’s choose a place we both like."*  
 💡 Product Example: *"Hold a cross-functional meeting to decide the next product step."*
@@ -333,7 +228,8 @@ Dialogue is when people share ideas and listen without defending their own views
 
 ---
 
-# 🔍 "Each Decision" (Dialogue)  
+# 🔍 Each Decision - Dialogue
+
 ✅ **You make separate decisions but align them.**  
 💡 Example: *"You choose the hotel, I’ll handle activities."*  
 💡 Product Example: *"Design handles UI, engineering handles infrastructure, both align with the vision."*
@@ -341,13 +237,16 @@ Dialogue is when people share ideas and listen without defending their own views
 
 ---
 
-# Planning a weekend trip:
+# Planning a weekend trip
 
-🗣️ **No Decision:** Just sharing ideas
-👥 **Your Decision:** Letting your partner choose
-💬 **My Decision:** Asking for input, but making the final choice
-🤝 **Our Decision:** Agreeing together
-🔍 **Each Decides:** You pick hotels, they pick activities
+| Decision Type         | Description                                      |
+|-----------------------|--------------------------------------------------|
+| 🗣️ No Decision      | Just sharing ideas                               |
+| 👥 Your Decision    | Letting your partner choose                     |
+| 💬 My Decision     | Asking for input, but making the final choice   |
+| 🤝 Our Decision    | Agreeing together                                |
+| 🔍 Each Decides   | You pick hotels, they pick activities           |
+
 
 
 ---
@@ -359,12 +258,12 @@ Dialogue is when people share ideas and listen without defending their own views
 
 # Kantor’s Four-Player Model
 
-| **Role**             | **Description**         |
+| Role             | Description         |
 |----------------------|-------------------------|
-| 🚀 **Mover**         | Initiates ideas         |
-| ❌ **Opposer**       | Challenges ideas        |
-| 👍 **Follower**      | Supports ideas          |
-| 👀 **Bystander**     | Observes and reflects   |
+| 🚀 Mover         | Initiates ideas         |
+| ❌ Opposer       | Challenges ideas        |
+| 👍 Follower      | Supports ideas          |
+| 👀 Bystander     | Observes and reflects   |
 
 
 
@@ -415,13 +314,13 @@ section{
 
 ![bg left:35%](./imgs/mt.jpg)
 
-# Matthew Truth 
-Product Manager with 99999+ years of experience
+# Matthew Truth
+Product Manager with <b>99999+</b> years of experience
 
  </hr>
 
 Dotin | RM Innovation | Zavié | Rey Branding | ParadiseHub | Avatech Accelerator | Ronevis | Parandeban | Press TV |  White-Tower Coffee Shop | McDonald's Malaysia
-
+  
 </hr>
 
 ##### 🧠  *"Great products are built by great Dialogues."*
